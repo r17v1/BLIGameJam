@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6c5328456a7a6d45bada694678c94ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
   health: 5
   alive: 1
 --- !u!4 &47949672 stripped
@@ -1660,6 +1661,10 @@ PrefabInstance:
       propertyPath: health
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5284963916277772094, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
     - target: {fileID: 5284963916277772095, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
       propertyPath: m_Speed
       value: 7
@@ -1728,6 +1733,14 @@ PrefabInstance:
     - target: {fileID: 7908702723166697884, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7908702724599520630, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
+      propertyPath: special
+      value: 
+      objectReference: {fileID: 809888356384016510, guid: 610a8080bcae38bcf89d1fb33b902dae, type: 3}
+    - target: {fileID: 7908702724599520630, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
+      propertyPath: specialCooldown
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7908702724599520631, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
       propertyPath: m_LocalPosition.x

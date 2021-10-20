@@ -16,7 +16,6 @@ public class PlayerControlls : MonoBehaviour
         projectileSpawner = GetComponentInChildren<ProjectileSpawner>();
     }
 
-
     // Update is called once per frame
     void Update()
     {
@@ -30,6 +29,11 @@ public class PlayerControlls : MonoBehaviour
         if (Input.GetAxis("Fire1") > 0)
         {
             projectileSpawner.shoot();
+            shooting = true;
+        }
+        else if (Input.GetAxis("Fire2") > 0)
+        {
+            projectileSpawner.specialAttack();
             shooting = true;
         }
         else

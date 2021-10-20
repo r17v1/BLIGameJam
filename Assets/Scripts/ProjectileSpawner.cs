@@ -32,7 +32,7 @@ public class ProjectileSpawner : MonoBehaviour
         if (currentSpecialCooldown <= 0)
         {
             currentSpecialCooldown = specialCooldown;
-            Instantiate(special);
+            Instantiate(special, transform.position, transform.rotation);
         }
     }
 

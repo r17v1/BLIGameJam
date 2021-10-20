@@ -47,6 +47,18 @@ TagManager:
   - name: Background
     uniqueID: 1344068867
     locked: 0
-  - name: New Layer
+  - name: Sprites
     uniqueID: 962208057
+    locked: 0
+  - name: New Layer
+    uniqueID: 3644741
+    locked: 0
+  - name: New Layer2
+    uniqueID: 3464358019
+    locked: 0
+  - name: New Layer3
+    uniqueID: 154888183
+    locked: 0
+  - name: New Layer4
+    uniqueID: 136448771
     locked: 0
