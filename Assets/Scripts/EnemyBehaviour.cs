@@ -7,7 +7,7 @@ public class EnemyBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
     public Transform player, target;
-    public float detectionDistance;
+    public float detectionDistance, shootingDistance;
     Vector3 initialPosition;
     NavMeshAgent agent;
     Animator anim;
@@ -35,7 +35,6 @@ public class EnemyBehaviour : MonoBehaviour
         {
             currentTarget = player.position;
             stoppingDistance = 8f;
-            projectileSpawner.shoot();
         }
         else if(toTarget)
         {
@@ -46,6 +45,11 @@ public class EnemyBehaviour : MonoBehaviour
         {
             currentTarget = initialPosition;
             stoppingDistance = 0f;
+        }
+
+        if (distance <= shootingDistance)
+        {
+            projectileSpawner.shoot();
         }
 
         agent.stoppingDistance = stoppingDistance;

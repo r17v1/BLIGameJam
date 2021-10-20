@@ -1601,6 +1601,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5284963916277772088, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5284963916277772090, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5284963916277772090, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 962208057
+      objectReference: {fileID: 0}
     - target: {fileID: 5284963916277772092, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
       propertyPath: player
       value: 
@@ -1609,6 +1621,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 338714666}
+    - target: {fileID: 5284963916277772092, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
+      propertyPath: shootingDistance
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5284963916277772092, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
       propertyPath: detectionDistance
       value: 15
@@ -1673,6 +1689,10 @@ PrefabInstance:
       propertyPath: m_AngularSpeed
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6107143312955597932, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24f2845f44b315c47a8eaf73735793c2, type: 3}
 --- !u!1001 &7908702723197394681
@@ -1726,6 +1746,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7908702723166697874, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7908702723166697877, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
       propertyPath: speedWhileShooting
       value: 6
@@ -1733,6 +1757,14 @@ PrefabInstance:
     - target: {fileID: 7908702723166697884, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7908702723166697884, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7908702724599520628, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908702724599520630, guid: 45c04fb69978c2a44a0e3140bac59738, type: 3}
       propertyPath: special

@@ -16,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -50,15 +50,15 @@ TagManager:
   - name: Sprites
     uniqueID: 962208057
     locked: 0
-  - name: New Layer
+  - name: ExplosionFire
     uniqueID: 3644741
     locked: 0
-  - name: New Layer2
+  - name: ExplosionShrapnel
     uniqueID: 3464358019
     locked: 0
-  - name: New Layer3
+  - name: ExplosionSmoke
     uniqueID: 154888183
     locked: 0
-  - name: New Layer4
+  - name: ExplosionLight
     uniqueID: 136448771
     locked: 0

@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637703493800000000
+      ticks: 637703549110000000
     m_Hash: 2630431104
   m_LockFileStatus:
     m_FilePath: /home/tashdid/Documents/GitHub/BLIGameJam/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637703493800000000
+      ticks: 637703549110000000
     m_Hash: 839113106
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -1325,6 +1325,7 @@ m_PackageAssets:
         - 1.6.0-pre.5
         - 1.6.1
         - 1.6.2
+        - 1.6.3
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1346,6 +1347,7 @@ m_PackageAssets:
         - 1.6.0-pre.5
         - 1.6.1
         - 1.6.2
+        - 1.6.3
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
