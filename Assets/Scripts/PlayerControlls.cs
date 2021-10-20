@@ -9,7 +9,8 @@ public class PlayerControlls : MonoBehaviour
     //float angle = 0;
     Movement movement;
     ProjectileSpawner projectileSpawner;
-    bool shooting=false;
+    public GameObject key, chest;
+    bool shooting=false, keyRetrieved = false;
     void Start()
     {
         movement = GetComponent<Movement>();
@@ -52,6 +53,21 @@ public class PlayerControlls : MonoBehaviour
         {
             transform.position = collision.gameObject.GetComponent<Portal>().exitPortal.position;
             transform.Translate(new Vector3(2.3f, 0, 0));
+        }
+
+        if (collision.gameObject.tag == "Key")
+        {
+            keyRetrieved = true;
+            Destroy(key);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {   
+        if (other.gameObject.tag == "Chest" && keyRetrieved)
+        {
+            Debug.Log("WON");
+            Destroy(chest);
         }
     }
 }
