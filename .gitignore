@@ -1,3 +1,8 @@
-
-Temp/UnityLockfile
-Temp/workerlic
+Temp/
+Library/
+obj/
+Library/ArtifactDB
+Library/SourceAssetDB
+*.log
+Library/SourceAssetDB
+Library/ArtifactDB
