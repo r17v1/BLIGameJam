@@ -9,13 +9,13 @@ public class PlayerControlls : MonoBehaviour
     //float angle = 0;
     Movement movement;
     ProjectileSpawner projectileSpawner;
-    bool shooting=false;
+    public GameObject key, chest;
+    bool shooting=false, keyRetrieved = false;
     void Start()
     {
         movement = GetComponent<Movement>();
         projectileSpawner = GetComponentInChildren<ProjectileSpawner>();
     }
-
 
     // Update is called once per frame
     void Update()
@@ -30,6 +30,11 @@ public class PlayerControlls : MonoBehaviour
         if (Input.GetAxis("Fire1") > 0)
         {
             projectileSpawner.shoot();
+            shooting = true;
+        }
+        else if (Input.GetAxis("Fire2") > 0)
+        {
+            projectileSpawner.specialAttack();
             shooting = true;
         }
         else
@@ -48,6 +53,21 @@ public class PlayerControlls : MonoBehaviour
         {
             transform.position = collision.gameObject.GetComponent<Portal>().exitPortal.position;
             transform.Translate(new Vector3(2.3f, 0, 0));
+        }
+
+        if (collision.gameObject.tag == "Key")
+        {
+            keyRetrieved = true;
+            Destroy(key);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {   
+        if (other.gameObject.tag == "Chest" && keyRetrieved)
+        {
+            Debug.Log("WON");
+            Destroy(chest);
         }
     }
 }

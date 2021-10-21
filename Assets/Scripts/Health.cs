@@ -22,9 +22,4 @@ public class Health : MonoBehaviour
         showHealth.fillAmount = curHealth / maxHealth;
 
     }
-
-    public void changeHealth(int lost)
-    {
-        curHealth -= lost;
-    }
 }
