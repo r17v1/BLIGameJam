@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Wall
   - Portal
+  - Key
+  - Chest
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -47,6 +49,21 @@ TagManager:
   - name: Background
     uniqueID: 1344068867
     locked: 0
-  - name: New Layer
+  - name: Sprites
     uniqueID: 962208057
+    locked: 0
+  - name: ExplosionFire
+    uniqueID: 3644741
+    locked: 0
+  - name: ExplosionShrapnel
+    uniqueID: 3464358019
+    locked: 0
+  - name: ExplosionSmoke
+    uniqueID: 154888183
+    locked: 0
+  - name: ExplosionLight
+    uniqueID: 136448771
+    locked: 0
+  - name: HUD
+    uniqueID: 3300006409
     locked: 0

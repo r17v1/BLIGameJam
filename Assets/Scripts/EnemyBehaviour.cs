@@ -7,10 +7,11 @@ public class EnemyBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
     public Transform player, target;
-    public float detectionDistance;
+    public float detectionDistance, shootingDistance;
     Vector3 initialPosition;
     NavMeshAgent agent;
     Animator anim;
+    ProjectileSpawner projectileSpawner;
     public bool toTarget = true;
     void Start()
     {
@@ -19,12 +20,12 @@ public class EnemyBehaviour : MonoBehaviour
         agent.updateUpAxis = false;
         anim = GetComponent<Animator>();
         initialPosition = transform.position;
+        projectileSpawner = GetComponentInChildren<ProjectileSpawner>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
         float distance = (player.position - transform.position).magnitude;
 
         Vector3 currentTarget;
@@ -46,14 +47,17 @@ public class EnemyBehaviour : MonoBehaviour
             stoppingDistance = 0f;
         }
 
+        if (distance <= shootingDistance)
+        {
+            projectileSpawner.shoot();
+        }
+
         agent.stoppingDistance = stoppingDistance;
         agent.SetDestination(currentTarget);
            
-
         Vector2 velocity = new Vector2(agent.velocity.x, agent.velocity.y).normalized;
         if (velocity.magnitude > 0)
         {
-
             transform.rotation = Quaternion.Euler(0f, 0f, Helper.VelocityToAngle(velocity));
             anim.SetBool("moving", true);
         }
