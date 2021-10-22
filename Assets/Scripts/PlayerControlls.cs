@@ -51,14 +51,15 @@ public class PlayerControlls : MonoBehaviour
     {
         if(collision.gameObject.tag == "Portal")
         {
-            transform.position = collision.gameObject.GetComponent<Portal>().exitPortal.position;
-            transform.Translate(new Vector3(2.3f, 0, 0));
+
+
+            collision.gameObject.GetComponent<Portal>().Teleport(gameObject);
         }
 
         if (collision.gameObject.tag == "Key")
         {
             keyRetrieved = true;
-            Destroy(key);
+            Destroy(collision.gameObject);
         }
     }
 

@@ -101,6 +101,7 @@ MonoBehaviour:
   target: Player
   destroyTags:
   - Wall
+  - Chest
   damage: 1
   range: 30
 --- !u!50 &2984113466658756927

@@ -6,7 +6,8 @@ using UnityEngine.AI;
 public class EnemyBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform player, target;
+    public GameObject playerObj;
+    public Transform target;
     public float detectionDistance, shootingDistance;
     Vector3 initialPosition;
     NavMeshAgent agent;
@@ -26,6 +27,7 @@ public class EnemyBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Transform player = playerObj.transform;
         float distance = (player.position - transform.position).magnitude;
 
         Vector3 currentTarget;

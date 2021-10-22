@@ -121,8 +121,9 @@ MonoBehaviour:
   target: Enemy
   destroyTags:
   - Wall
-  damage: 5
-  range: 15
+  - Chest
+  damage: 3
+  range: 10
 --- !u!50 &-5500648666888385211
 Rigidbody2D:
   serializedVersion: 4

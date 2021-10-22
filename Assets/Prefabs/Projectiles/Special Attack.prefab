@@ -117,12 +117,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716c2944f0eff4e43a0bb335ff0715e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 40
   target: Enemy
   destroyTags:
   - Wall
+  - Chest
   damage: 5
-  range: 15
+  range: 10
 --- !u!50 &-6844736467864202016
 Rigidbody2D:
   serializedVersion: 4
