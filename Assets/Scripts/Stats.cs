@@ -29,13 +29,13 @@ public class Stats : MonoBehaviour
         if (health <= 0)
         {
             alive = false;
-            /*if (gameObject.tag == "Enemy")
+            if (gameObject.tag == "Enemy")
             {
                 Scorer.score += 10;
                 GameObject explosionGameObject = Instantiate(explosion, transform.position, transform.rotation);
                 Destroy(gameObject);
                 Destroy(explosionGameObject, 2);
-            }*/
+            }
         }
         
     }

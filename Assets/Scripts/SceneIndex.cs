@@ -3,6 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum SceneIndex {
-    game = 0,
-    menu = 1
+    game = 1,
+    menu = 0
 }

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a9e543727240304d907f11127bf85d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  playerObj: {fileID: 0}
   target: {fileID: 0}
   detectionDistance: 0
   shootingDistance: 0

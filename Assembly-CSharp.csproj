@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AudioController.cs" />
     <Compile Include="Assets\Scripts\ProjectileSpawner.cs" />
     <Compile Include="Assets\Scripts\Scorer.cs" />
     <Compile Include="Assets\Scripts\ProjectileProperties.cs" />
@@ -64,9 +65,12 @@
     <Compile Include="Assets\Scripts\Helper.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\LoadingNext.cs" />
     <Compile Include="Assets\Scripts\LoadingScene.cs" />
     <Compile Include="Assets\Scripts\Stats.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ShowScore.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
