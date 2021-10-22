@@ -11,5 +11,4 @@ public class Portal : MonoBehaviour
         player.transform.position = exitPortal.position;
         player.transform.Translate(new Vector3(1.55f, 0, 0));
     }
-
 }

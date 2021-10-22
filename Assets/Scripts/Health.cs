@@ -6,12 +6,18 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject player;
     Image showHealth;
-    float maxHealth = 100f;
+    public float maxHealth;
     public static float curHealth;
+    public static bool isLost = false;
+    Stats stats;
+
     void Start()
     {
+        stats = player.GetComponent<Stats>();
         showHealth = GetComponent<Image>();
+        maxHealth = stats.health;
         curHealth = maxHealth;
 
     }
@@ -19,7 +25,12 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        curHealth = stats.health;
         showHealth.fillAmount = curHealth / maxHealth;
+        if (curHealth <= 0) {
+            Debug.Log(curHealth);
+            isLost = true;
+        }
 
     }
 }

@@ -10,7 +10,7 @@ public class Stats : MonoBehaviour
     public bool alive = true;
     void Start()
     {
-        
+         //Health.maxHealth = 50;
     }
 
     // Update is called once per frame
@@ -23,19 +23,20 @@ public class Stats : MonoBehaviour
         health -= damage;
         if (gameObject.tag == "Player")
         {
-            Health.curHealth -= 1;
+            Health.curHealth = health;
         }
         
         if (health <= 0)
         {
             alive = false;
-            if (gameObject.tag == "Enemy")
+            /*if (gameObject.tag == "Enemy")
             {
                 Scorer.score += 10;
                 GameObject explosionGameObject = Instantiate(explosion, transform.position, transform.rotation);
                 Destroy(gameObject);
                 Destroy(explosionGameObject, 2);
-            }
+            }*/
         }
+        
     }
 }
